@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F90D5F2145E322200975CEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F90D5F1145E322200975CEB /* UIKit.framework */; };
+		0F90D5F4145E322200975CEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F90D5F3145E322200975CEB /* Foundation.framework */; };
+		0F90D5F6145E322200975CEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F90D5F5145E322200975CEB /* CoreGraphics.framework */; };
+		0F90D5F8145E322200975CEB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F90D5F7145E322200975CEB /* CoreData.framework */; };
+		0F90D5FE145E322200975CEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F90D5FC145E322200975CEB /* InfoPlist.strings */; };
+		0F90D600145E322200975CEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F90D5FF145E322200975CEB /* main.m */; };
+		0F90D604145E322200975CEB /* xisAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F90D603145E322200975CEB /* xisAppDelegate.m */; };
+		0F90D607145E322200975CEB /* xis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F90D605145E322200975CEB /* xis.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F90D5ED145E322200975CEB /* xis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F90D5F1145E322200975CEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F90D5F3145E322200975CEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F90D5F5145E322200975CEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F90D5F7145E322200975CEB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0F90D5FB145E322200975CEB /* xis-Info.plist */ = {isa = PBXFileReference; path = "xis-Info.plist"; sourceTree = "<group>"; };
+		0F90D5FD145E322200975CEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F90D5FF145E322200975CEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F90D601145E322200975CEB /* xis-Prefix.pch */ = {isa = PBXFileReference; path = "xis-Prefix.pch"; sourceTree = "<group>"; };
+		0F90D602145E322200975CEB /* xisAppDelegate.h */ = {isa = PBXFileReference; path = xisAppDelegate.h; sourceTree = "<group>"; };
+		0F90D603145E322200975CEB /* xisAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xisAppDelegate.m; sourceTree = "<group>"; };
+		0F90D606145E322200975CEB /* xis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = xis.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F90D5EA145E322200975CEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F90D5F2145E322200975CEB /* UIKit.framework in Frameworks */,
+				0F90D5F4145E322200975CEB /* Foundation.framework in Frameworks */,
+				0F90D5F6145E322200975CEB /* CoreGraphics.framework in Frameworks */,
+				0F90D5F8145E322200975CEB /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F90D5E2145E322100975CEB = {
+			isa = PBXGroup;
+			children = (
+				0F90D5F9145E322200975CEB /* xis */,
+				0F90D5F0145E322200975CEB /* Frameworks */,
+				0F90D5EE145E322200975CEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F90D5EE145E322200975CEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F90D5ED145E322200975CEB /* xis.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F90D5F0145E322200975CEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F90D5F1145E322200975CEB /* UIKit.framework */,
+				0F90D5F3145E322200975CEB /* Foundation.framework */,
+				0F90D5F5145E322200975CEB /* CoreGraphics.framework */,
+				0F90D5F7145E322200975CEB /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F90D5F9145E322200975CEB /* xis */ = {
+			isa = PBXGroup;
+			children = (
+				0F90D602145E322200975CEB /* xisAppDelegate.h */,
+				0F90D603145E322200975CEB /* xisAppDelegate.m */,
+				0F90D605145E322200975CEB /* xis.xcdatamodeld */,
+				0F90D5FA145E322200975CEB /* Supporting Files */,
+			);
+			path = xis;
+			sourceTree = "<group>";
+		};
+		0F90D5FA145E322200975CEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F90D5FB145E322200975CEB /* xis-Info.plist */,
+				0F90D5FC145E322200975CEB /* InfoPlist.strings */,
+				0F90D5FF145E322200975CEB /* main.m */,
+				0F90D601145E322200975CEB /* xis-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F90D5EC145E322200975CEB /* xis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F90D60A145E322200975CEB /* Build configuration list for PBXNativeTarget "xis" */;
+			buildPhases = (
+				0F90D5E9145E322200975CEB /* Sources */,
+				0F90D5EA145E322200975CEB /* Frameworks */,
+				0F90D5EB145E322200975CEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xis;
+			productName = xis;
+			productReference = 0F90D5ED145E322200975CEB /* xis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F90D5E4145E322100975CEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 0F90D5E7145E322100975CEB /* Build configuration list for PBXProject "xis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F90D5E2145E322100975CEB;
+			productRefGroup = 0F90D5EE145E322200975CEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F90D5EC145E322200975CEB /* xis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F90D5EB145E322200975CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F90D5FE145E322200975CEB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F90D5E9145E322200975CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F90D600145E322200975CEB /* main.m in Sources */,
+				0F90D604145E322200975CEB /* xisAppDelegate.m in Sources */,
+				0F90D607145E322200975CEB /* xis.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F90D5FC145E322200975CEB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F90D5FD145E322200975CEB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F90D608145E322200975CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		0F90D609145E322200975CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F90D60B145E322200975CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xis/xis-Prefix.pch";
+				INFOPLIST_FILE = "xis/xis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0F90D60C145E322200975CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xis/xis-Prefix.pch";
+				INFOPLIST_FILE = "xis/xis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F90D5E7145E322100975CEB /* Build configuration list for PBXProject "xis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F90D608145E322200975CEB /* Debug */,
+				0F90D609145E322200975CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F90D60A145E322200975CEB /* Build configuration list for PBXNativeTarget "xis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F90D60B145E322200975CEB /* Debug */,
+				0F90D60C145E322200975CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0F90D605145E322200975CEB /* xis.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0F90D606145E322200975CEB /* xis.xcdatamodel */,
+			);
+			currentVersion = 0F90D606145E322200975CEB /* xis.xcdatamodel */;
+			path = xis.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0F90D5E4145E322100975CEB /* Project object */;
+}
