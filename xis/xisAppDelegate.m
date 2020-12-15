@@ -10,16 +10,91 @@
 
 @implementation xisAppDelegate
 
-@synthesize window = _window;
+@synthesize window;
+@synthesize mainView;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSUserDefaults *configuracoes = [NSUserDefaults standardUserDefaults];
+    NSDateFormatter *formatoData = [[NSDateFormatter alloc]init];
+    [formatoData setDateFormat:@"dd/MM/yyyy"];
+    
+    NSString *dataUltAtu = [configuracoes objectForKey:@"DataUltimaUtilizacao"];
+    
+    if(dataUltAtu == nil)
+    {
+        
+		
+		NSString *pathStr = [[NSBundle mainBundle] bundlePath];
+		NSString *settingsBundlePath = [pathStr stringByAppendingPathComponent:@"Settings.bundle"];
+		NSString *finalPath = [settingsBundlePath stringByAppendingPathComponent:@"Root.plist"];
+		
+		NSDictionary *settingsDict = [NSDictionary dictionaryWithContentsOfFile:finalPath];
+		NSArray *prefSpecifierArray = [settingsDict objectForKey:@"PreferenceSpecifiers"];
+		
+		NSDictionary *prefItem;
+		
+		for (prefItem in prefSpecifierArray)
+		{
+			NSString *keyValueStr = [prefItem objectForKey:@"Key"];
+			id defaultValue = [prefItem objectForKey:@"DefaultValue"];
+			
+			if (keyValueStr != nil) 
+			{
+				[configuracoes setObject:defaultValue forKey:keyValueStr];
+			}
+			
+		}
+        
+        [configuracoes setObject:[formatoData stringFromDate:[NSDate date]] forKey:@"DataUltimaUtilizacao"];
+		[configuracoes synchronize];
+        
+        [configuracoes setObject:@"0" forKey:@"QuantidadePerguntas"];
+        [configuracoes synchronize];
+        
+        /*
+        if([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
+        {
+            
+            [configuracoes setObject:@"v0" forKey:@"Versao"];
+            [configuracoes synchronize];
+        }
+        else
+        {
+           */
+        //COMENTAR ESTA LINHA E DESCOMENTAR LINHA DEBAIXO PARA SOLTAR A VERSÃO FREE
+        //[configuracoes setObject:@"v0" forKey:@"Versao"];
+            [configuracoes setObject:@"free" forKey:@"Versao"];
+            [configuracoes synchronize];        
+    //}
+       
+        
+        
+        
+    }
+    
+    //[[[Questao alloc] init] CriarDiretoriosDeConteudo];
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    if([[[UIDevice currentDevice] model] isEqualToString:@"iPad"])
+    {
+        mainView = [[PrincipalViewController alloc] initWithNibName:@"PrincipalView" bundle:nil];
+        [window addSubview:mainView.view];
+    }
+    else
+    {
+        mainView = [[PrincipalViewController alloc] initWithNibName:@"PrincipalViewIphone" bundle:nil];
+        [window addSubview:mainView.view];
+    }
+    
+    
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
